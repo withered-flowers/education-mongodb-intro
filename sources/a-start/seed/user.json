@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"name": "Leanne Graham",
+		"username": "Bret",
+		"password": "123456",
+		"email": "halo@mail.com",
+		"role": ["superadmin"]
+	},
+	{
+		"id": 2,
+		"name": "Ervin Howell",
+		"username": "Antonette",
+		"password": "123456",
+		"email": "admin@mail.com",
+		"role": ["admin-user", "viewer-todo"]
+	},
+	{
+		"id": 3,
+		"name": "Clementine Bauch",
+		"username": "Samantha",
+		"password": "123456",
+		"email": "other@mail.com",
+		"role": ["viewer-todo", "viewer-user"]
+	}
+]
