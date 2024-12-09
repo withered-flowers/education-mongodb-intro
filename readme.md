@@ -11,9 +11,11 @@
 - MongoDB CRUD (mongosh)
 
 ## Demo
+
 - Create simple app using MongoDB Drivers (`mongodb`) + graphql-server
 
 ## References
+
 - [nosql](https://www.mongodb.com/nosql-explained)
 - [nosql vs sql](https://www.mongodb.com/nosql-explained/nosql-vs-sql)
 - [Why use nosql](https://www.mongodb.com/developer/products/mongodb/top-4-reasons-to-use-mongodb/)
