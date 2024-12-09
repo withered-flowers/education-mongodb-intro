@@ -1,4 +1,11 @@
-const { MongoClient } = require("mongodb");
+const isNotProduction = process.env.NODE_ENV !== "production";
+
+if (isNotProduction) {
+	const dotenv = await import("dotenv");
+	dotenv.config();
+}
+
+import { MongoClient } from "mongodb";
 
 // Replace the uri string with your connection string.
 const uri = process.env.MONGODB_CONN_STRING;
@@ -17,4 +24,4 @@ async function getDB() {
 	return client.db(process.env.MONGODB_DB_NAME);
 }
 
-module.exports = { connect, getDB };
+export { connect, getDB };

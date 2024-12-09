@@ -1,10 +1,10 @@
-const { ApolloServer } = require("@apollo/server");
-const { startStandaloneServer } = require("@apollo/server/standalone");
-const { GraphQLError } = require("graphql");
+import { ApolloServer } from "@apollo/server";
+import { startStandaloneServer } from "@apollo/server/standalone";
+import { GraphQLError } from "graphql";
 
-const { responseTypeDefs } = require("./schemas/response");
-const { userTypeDefs, userResolvers } = require("./schemas/user");
-const { todoTypeDefs, todoResolvers } = require("./schemas/todo");
+import { responseTypeDefs } from "./schemas/response.js";
+import { todoResolvers, todoTypeDefs } from "./schemas/todo.js";
+import { userResolvers, userTypeDefs } from "./schemas/user.js";
 
 const server = new ApolloServer({
 	typeDefs: [responseTypeDefs, userTypeDefs, todoTypeDefs],

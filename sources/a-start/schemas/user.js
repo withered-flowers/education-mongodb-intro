@@ -95,7 +95,4 @@ const userResolvers = {
 	},
 };
 
-module.exports = {
-	userTypeDefs,
-	userResolvers,
-};
+export { userTypeDefs, userResolvers };

@@ -1,5 +1,5 @@
-const { ObjectId } = require("mongodb");
-const { GraphQLError } = require("graphql");
+import { GraphQLError } from "graphql";
+import { ObjectId } from "mongodb";
 
 // ?? Initial data users
 const users = [
@@ -165,7 +165,4 @@ const userResolvers = {
 	},
 };
 
-module.exports = {
-	userTypeDefs,
-	userResolvers,
-};
+export { userTypeDefs, userResolvers };

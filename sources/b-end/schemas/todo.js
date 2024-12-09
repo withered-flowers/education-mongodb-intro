@@ -219,7 +219,4 @@ const todoResolvers = {
 	},
 };
 
-module.exports = {
-	todoTypeDefs,
-	todoResolvers,
-};
+export { todoTypeDefs, todoResolvers };
